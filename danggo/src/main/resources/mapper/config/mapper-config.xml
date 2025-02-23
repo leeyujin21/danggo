@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <settings>
+        <!-- 컬럼명 형태를 CamelCase형태로 자동으로 매핑 -->
+        <setting name="mapUnderscoreToCamelCase" value="true"></setting>
+        <!--  파라미터에 Null 값이 있을 경우 에러 처리 -->
+        <setting name="jdbcTypeForNull" value="VARCHAR"></setting>
+    </settings>
+</configuration>

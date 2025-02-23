@@ -23,16 +23,17 @@ show grants for 'danggo'@'%';
 exit
 ```
 3. DBeaver로 확인
-* 새 데이터베이스 연결 - MariaDB 선택
-* Server Host : `localhost`
-* Port : 기본 3306
-* Database: `danggo`
-* Username: `danggo`
-* Password: `danggo12!@`
-* 왼쪽 하단 Test Connection으로 연결 확인 후 완료 
-4. DataSource 설정 : application.propertis
-```
-spring.datasource.url=jdbc:mariadb://localhost:3306/danggo
-spring.datasource.username=danggo
-spring.datasource.password=danggo12!@
-```
+   * 새 데이터베이스 연결 - MariaDB 선택
+   * Server Host : `localhost`
+   * Port : 기본 3306
+   * Database: `danggo`
+   * Username: `danggo`
+   * Password: `danggo12!@`
+   * 왼쪽 하단 Test Connection으로 연결 확인 후 완료 
+   4. DataSource 설정 : application.propertis
+        ```
+        spring.datasource.driver-class-name=org.mariadb.jdbc.Driver
+        spring.datasource.url=jdbc:mariadb://localhost:3306/danggo
+        spring.datasource.username=danggo
+        spring.datasource.password=danggo12!@
+        ```
