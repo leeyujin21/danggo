@@ -37,3 +37,12 @@ exit
         spring.datasource.username=danggo
         spring.datasource.password=danggo12!@
         ```
+      
+** 테스트용 임시 테이블 쿼리 **
+```
+CREATE TABLE `tb_test` (
+  `t_seq` int(11) NOT NULL AUTO_INCREMENT COMMENT '번호',
+  `note` varchar(255) DEFAULT NULL COMMENT '노트',
+  PRIMARY KEY (`t_seq`)
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+```
